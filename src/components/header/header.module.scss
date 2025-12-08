@@ -1,0 +1,53 @@
+@use "../../colors.scss";
+
+.header {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border: 1px solid red;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;    
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  p {
+    color: colors.$color-black;
+    font-weight: bold;
+  }
+
+  a, button {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  a {
+    color: colors.$color-black;
+    transition: 0.3s;
+    &:hover {
+        color: rgb(46, 46, 232);
+    }
+  }
+
+  button {
+    background-color: colors.$color-green;
+    color: colors.$color-white;
+    padding: 0.8rem 1.2rem;   
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: colors.$green-hover;
+    }
+  }
+}
