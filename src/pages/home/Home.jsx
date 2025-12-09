@@ -1,8 +1,18 @@
 import s from "./home.module.scss";
 import iconSaude from "../../assets/saude.png";
 import doutor from "../../assets/doutor.png";
+import CardMissao from "../../components/cardMissao/CardMissao";
 
 const Home = () => {
+  const title1 = "Acesso Equitativo";
+  const description1 =
+    "Garantir que todos tenham acesso a cuidados de saúde de qualidade, independentemente de sua condição financeira.";
+  const title2 = "Comunidade Forte";
+  const description2 =
+    "Construir uma rede de profissionais de saúde dedicados a servir com compaixão e profissionalismo.";
+  const title3 = "Bem-estar Total";
+  const description3 =
+    "Oferecer atendimento integral em medicina geral e odontologia para melhorar a qualidade de vida.";
   return (
     <main>
       <section className={s.container}>
@@ -20,6 +30,17 @@ const Home = () => {
         </div>
         <div className={s.boxImage}>
           <img src={doutor} alt="Imagem de  um doutor  sorrindo" />
+        </div>
+      </section>
+      <section className={s.missao}>
+        <h2>Nossa Missão</h2>
+        <p>
+          Transformar vidas através do acesso universal a saúde de qualidade
+        </p>
+        <div>
+          <CardMissao titleCard={title1} descriptionCard={description1} />
+          <CardMissao titleCard={title2} descriptionCard={description2} />
+          <CardMissao titleCard={title3} descriptionCard={description3} />
         </div>
       </section>
     </main>

@@ -4,7 +4,6 @@
   height: 80vh;
   display: flex;
   padding: 0 4rem;
-  border: 1px solid green;
 }
 
 .boxInfo {
@@ -70,6 +69,11 @@
     height: 90%;
     padding-top: 1rem;
   }
+}
+
+.missao {
+  border: 1px solid purple;
+  height: 70vh;
 }
 
 @media screen and (max-width: 1200px) {
