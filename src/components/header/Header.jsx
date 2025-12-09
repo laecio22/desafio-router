@@ -11,7 +11,9 @@ const Header = () => {
       <nav>
         <Link to="/">Home</Link>
         <Link to="/voluntarios"><button>Seja Voluntário</button></Link>
-      </nav>
+      </nav>      
+        <img src="/hamburguer.png" alt="nenu hamburguer" className={s.menuHamburguer}/>
+      
     </header>
   );
 };

@@ -60,16 +60,76 @@
     color: colors.$color-green;
 
     &:hover {
-        background-color: colors.$color-light;
+      background-color: colors.$color-light;
     }
   }
 }
 
-.boxImage {  
-   
-    img {
-       height: 90%;
-       padding-top: 1rem;     
-       
+.boxImage {
+  img {
+    height: 90%;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    height: 90vh;
+  }
+  .boxInfo {
+    h1,
+    p {
+      width: 80%;
     }
+  }
+  .boxImage {
+    img {
+      height: 85%;
+      width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    height: 80vh;
+  }
+  .boxInfo {
+    align-items: center;
+    h1,
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    img {
+      width: 250px;
+    }
+  }
+  .boxImage {
+    img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .boxInfo {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  .boxButtons {
+    flex-direction: column;
+    width: 100%;
+  }
 }
