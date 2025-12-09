@@ -4,8 +4,8 @@
   display: flex;
   height: 80px;
   justify-content: space-between;
-  padding: 0 2rem;
-  border: 1px solid red;
+  padding: 0 4rem;
+  border-bottom: 1px solid colors.$color-black;
 
   div {
     display: flex;

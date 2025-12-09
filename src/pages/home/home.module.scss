@@ -1,0 +1,75 @@
+@use "./../../colors.scss";
+
+.container {
+  height: 80vh;
+  display: flex;
+  padding: 0 4rem;
+  border: 1px solid green;
+}
+
+.boxInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  color: colors.$color-black;
+
+  img {
+    width: 200px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    width: 70%;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    width: 70%;
+  }
+}
+
+.boxButtons {
+  display: flex;
+  gap: 1rem;
+
+  button {
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  .btnVoluntario {
+    background-color: colors.$color-green;
+    color: colors.$color-white;
+
+    &:hover {
+      background-color: colors.$green-hover;
+    }
+  }
+
+  .btnAjuda {
+    border: 1.4px solid colors.$color-green;
+    background-color: transparent;
+    color: colors.$color-green;
+
+    &:hover {
+        background-color: colors.$color-light;
+    }
+  }
+}
+
+.boxImage {  
+   
+    img {
+       height: 90%;
+       padding-top: 1rem;     
+       
+    }
+}
