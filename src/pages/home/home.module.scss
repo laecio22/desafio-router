@@ -1,5 +1,6 @@
 @use "./../../colors.scss";
 
+//estilização  sessão principal
 .container {
   height: 80vh;
   display: flex;
@@ -71,7 +72,8 @@
   }
 }
 
-.missao { 
+// estilização  sessão nossa missão
+.missao {
   height: 70vh;
   background-color: colors.$color-green;
   color: colors.$color-white;
@@ -94,6 +96,24 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+  }
+}
+
+//sessão estatisticas
+.estatisticas {
+  background-color: colors.$color-white;
+  color: colors.$color-black;
+  padding: 4rem;
+  border: 1px solid red;
+
+  h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.5rem;
   }
 }
 

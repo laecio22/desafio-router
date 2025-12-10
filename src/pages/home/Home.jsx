@@ -2,6 +2,7 @@ import s from "./home.module.scss";
 import iconSaude from "../../assets/saude.png";
 import doutor from "../../assets/doutor.png";
 import CardMissao from "../../components/cardMissao/CardMissao";
+import CardEstatisticas from "../../components/cardEstatisticas/CardEstatisticas";
 
 const Home = () => {
   const title1 = "Acesso Equitativo";
@@ -13,6 +14,7 @@ const Home = () => {
   const title3 = "Bem-estar Total";
   const description3 =
     "Oferecer atendimento integral em medicina geral e odontologia para melhorar a qualidade de vida.";
+  
   return (
     <main>
       <section className={s.container}>
@@ -41,6 +43,18 @@ const Home = () => {
           <CardMissao titleCard={title1} descriptionCard={description1} />
           <CardMissao titleCard={title2} descriptionCard={description2} />
           <CardMissao titleCard={title3} descriptionCard={description3} />
+        </div>
+      </section>
+      <section className={s.estatisticas}>
+        <h2>Nosso Impacto</h2>
+        <p>
+          Transformando a saúde de nossa comunidade, um paciente de cada vez
+        </p>
+        <div className={s.boxCardsEstatisticas}>
+          <CardEstatisticas title="2,500+" description="Pessoas Atendidas"/>
+          <CardEstatisticas title="150+"  description="Profissionais Voluntários"/>
+          <CardEstatisticas title="98%"  description="Satisfação dos Pacientes"/>
+          <CardEstatisticas title="5+"  description="Anos de Dedicação" />
         </div>
       </section>
     </main>
