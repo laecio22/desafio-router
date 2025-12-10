@@ -2,7 +2,7 @@ import s from './cardMissao.module.scss'
 
 const CardMissao = (props) => {
   return (
-    <article className={s.container}>
+    <article className={s.article}>
         <h3>{props.titleCard}</h3>
         <p>{props.descriptionCard}</p>
     </article>
