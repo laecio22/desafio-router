@@ -74,6 +74,17 @@
 .missao {
   border: 1px solid purple;
   height: 70vh;
+  background-color: colors.$color-green;
+  color: colors.$color-white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .boxCardsMissao {
+    display: flex;
+    gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {

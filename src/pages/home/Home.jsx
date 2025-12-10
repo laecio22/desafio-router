@@ -37,7 +37,7 @@ const Home = () => {
         <p>
           Transformar vidas através do acesso universal a saúde de qualidade
         </p>
-        <div>
+        <div className={s.boxCardsMissao}>
           <CardMissao titleCard={title1} descriptionCard={description1} />
           <CardMissao titleCard={title2} descriptionCard={description2} />
           <CardMissao titleCard={title3} descriptionCard={description3} />
