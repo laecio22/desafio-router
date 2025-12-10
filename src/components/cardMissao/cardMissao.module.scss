@@ -2,12 +2,14 @@
 .article {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 1.5rem 0;
+    // justify-content: center;
     align-items: center;
     border: 1px solid colors.$color-white;
-    height: 30vh;
+    // height: 35vh;
     gap: 1rem;
     border-radius: 14px;
+    width: 30%;
 
     h3 {
         font-weight: bold;
@@ -17,8 +19,46 @@
     p {
         font-weight: 400;
         font-size: 1.3rem;
-        text-align: center;
-        width: 80%;
+        text-align: center;        
+        width: 90%;
     }
 
+}
+
+@media screen and (max-width:1200px) {
+    .article {
+        width: 35%;
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .article {
+        width: 50%;
+        height: 30vh;      
+    }
+}
+
+@media  screen and (max-width:900px) {
+    .article {
+        width: 65%;
+    }
+}
+
+@media  screen and (max-width:700px) {
+    .article {
+        width: 75%;
+    }
+}
+
+@media  screen and (max-width:500px) {
+    .article {
+        width: 100%;
+    }
 }

@@ -71,8 +71,7 @@
   }
 }
 
-.missao {
-  border: 1px solid purple;
+.missao { 
   height: 70vh;
   background-color: colors.$color-green;
   color: colors.$color-white;
@@ -93,6 +92,7 @@
 
   .boxCardsMissao {
     display: flex;
+    justify-content: space-between;
     gap: 1rem;
   }
 }
@@ -136,11 +136,27 @@
       display: none;
     }
   }
+
+  .missao {
+    height: 150vh;
+    align-items: center;
+    gap: 3rem;
+
+    p {
+      text-align: center;
+    }
+    .boxCardsMissao {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
   .container {
     padding: 0 2rem;
+    height: 90vh;
   }
 
   .boxInfo {
@@ -156,5 +172,18 @@
   .boxButtons {
     flex-direction: column;
     width: 100%;
+  }
+
+  .missao {
+    padding: 4rem 2rem;
+    height: 150vh;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
   }
 }
