@@ -107,8 +107,7 @@
   height: 80vh;
   display: flex;
   flex-direction: column;
-  gap: 2rem; 
-  border: 1px solid red;
+  gap: 3rem;
 
   h2 {
     font-weight: bold;
@@ -123,7 +122,8 @@
   .boxCardsEstatisticas {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
 
@@ -142,6 +142,13 @@
       height: 85%;
       width: 500px;
     }
+  }
+}
+
+//quebra  específica  para  container  dos  cards  de  estatísticas
+@media screen and (max-width: 1176px) {
+  .estatisticas {
+    height: 100vh;
   }
 }
 
@@ -181,6 +188,28 @@
       gap: 2rem;
     }
   }
+
+  .estatisticas {
+    height: 120vh;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .estatisticas {
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .estatisticas {
+    .boxCardsEstatisticas {
+      justify-content: center;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -214,6 +243,13 @@
 
     p {
       font-size: 1.3rem;
+    }
+  }
+
+  .estatisticas {
+    padding: 4rem 2rem;
+    h2 {
+      font-size: 2.2rem;
     }
   }
 }
