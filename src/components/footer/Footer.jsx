@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={s.footer}>
       <div className={s.contentFooter}>
         <article>
-          <div>
+          <div className={s.boxFlexivel}>
             <img src={IconCoracao} alt="icone de coração" />
             <h3>Médicos e Dentistas</h3>
           </div>
@@ -17,15 +17,15 @@ const Footer = () => {
         </article>
         <article>
           <h3>Contato</h3>
-          <div>
+          <div className={s.boxFlexivel}>
             <img src={IconEmail} alt="ícone  de  email" />
             <p>contato@medico-dentista.org</p>
           </div>
-          <div>
+          <div className={s.boxFlexivel}>
             <img src={IconPhone} alt="ícone  de telefone" />
             <p>(11) 3000-0000</p>
           </div>
-          <div>
+          <div className={s.boxFlexivel}>
             <img src={IconMap} alt="ícone de localização" />
             <p>São Paulo, Brasil</p>
           </div>

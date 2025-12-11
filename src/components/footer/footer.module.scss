@@ -2,6 +2,32 @@
 .footer {
     background-color: colors.$color-dark;
     color: colors.$color-white;
-    height: 50vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
     border: 1px solid red;
+
+    .contentFooter {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        article {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            height: 30vh;           
+            border: 1px solid white;
+        }
+
+        .boxFlexivel {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
+    }
 }
