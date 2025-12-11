@@ -1,0 +1,7 @@
+@use '../../colors.scss';
+.footer {
+    background-color: colors.$color-dark;
+    color: colors.$color-white;
+    height: 50vh;
+    border: 1px solid red;
+}
