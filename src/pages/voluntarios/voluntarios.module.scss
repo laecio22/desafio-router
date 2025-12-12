@@ -8,7 +8,6 @@
   padding: 2rem;
   background-color: colors.$color-light;
   color: colors.$color-black;
-  border: 1px solid red;
 
   h1 {
     font-size: 3rem;
@@ -24,5 +23,27 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .containerVoluntario {
+    height: 130vh;
+    .containerCards {
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .containerVoluntario {
+    h1 {
+      font-size: 2.3rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      text-align: center;
+    }
   }
 }

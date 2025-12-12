@@ -1,4 +1,5 @@
 @use "../../colors.scss";
+
 .article {
   border: 1px solid colors.$color-black;
   height: 25vh;
@@ -6,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
+  gap: 1rem;
   border-radius: 14px;
   h3 {
     font-size: 1.8rem;
@@ -16,4 +17,16 @@
     text-align: center;
     font-size: 1.4rem;
   }
+}
+
+@media  screen and (max-width:500px){
+    .article {
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .description {
+            font-size: 1.2rem;
+        }
+    }
 }
