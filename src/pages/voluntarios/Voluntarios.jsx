@@ -2,11 +2,11 @@ import CardVantagens from "../../components/cardVantagens/CardVantagens";
 import s from "./voluntarios.module.scss";
 const Voluntarios = () => {
   return (
-    <section>
+    <main>
       <section className={s.containerVoluntario}>
         <h1>Seja Voluntário</h1>
         <p>Junte-se a nós e faça a diferença na vida de pessoas que precisam</p>
-        <div>
+        <div className={s.containerCards}>
           <CardVantagens 
           title="Impacto Direto" 
           description="Sua dedicação salva vidas e transforma comunidades"/>
@@ -23,7 +23,7 @@ const Voluntarios = () => {
       {/* <section className={s.containerForm}>
         <form></form>
       </section> */}
-    </section>
+    </main>
   );
 };
 

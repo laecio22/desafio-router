@@ -2,10 +2,10 @@ import s from './cardVantagens.module.scss'
 
 const CardVantagens = (props) => {
   return (
-    <section>
+    <article className={s.article}>
       <h3>{props.title}</h3>
-      <p>{props.description}</p>
-    </section>
+      <p className={s.description}>{props.description}</p>
+    </article>
   )
 }
 

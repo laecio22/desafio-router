@@ -1,0 +1,19 @@
+@use "../../colors.scss";
+.article {
+  border: 1px solid colors.$color-black;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border-radius: 14px;
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
