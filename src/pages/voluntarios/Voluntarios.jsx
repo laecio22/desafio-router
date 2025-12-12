@@ -20,9 +20,23 @@ const Voluntarios = () => {
           />        
         </div>
       </section>
-      {/* <section className={s.containerForm}>
-        <form></form>
-      </section> */}
+      <section className={s.containerForm}>
+        <form>
+          <h2>Inscrição para Voluntários</h2>
+          <div>
+            <h4>Dados Pessoais</h4>
+            <input type="text"  placeholder="Nome*" />
+            <input type="email" placeholder="Seu Email*" />
+            <input type="tel" placeholder="Seu telefone" />
+          </div>
+          <div>
+            <h4>Mensagem Adicional</h4>
+            <textarea placeholder="Conte-nos porque quer ser  um voluntário ..."></textarea>
+          </div>
+          <p>Entraremos em  contato para  mais informações</p>
+          <button>Enviar Inscrição</button>
+        </form>
+      </section>
     </main>
   );
 };

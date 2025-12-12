@@ -1,4 +1,6 @@
 @use "../../colors.scss";
+
+//estilização  sessão  principal
 .containerVoluntario {
   height: 70vh;
   display: flex;
@@ -25,6 +27,8 @@
     gap: 2rem;
   }
 }
+
+//estilização  sessão  formulário
 
 @media screen and (max-width: 1030px) {
   .containerVoluntario {
