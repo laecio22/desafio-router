@@ -1,33 +1,111 @@
-@use '../../colors.scss';
+@use "../../colors.scss";
 .footer {
-    background-color: colors.$color-dark;
-    color: colors.$color-white;
-    height: 60vh;
+  background-color: colors.$color-dark;
+  color: colors.$color-white;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+
+  .contentFooter {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 3rem;
-    border: 1px solid red;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .container {
+      display: flex;
+      gap: 2rem;
+
+      article {
+        width: 50%;
+      }
+    }
+
+    article {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      height: 30vh;
+
+      h3 {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 0.9rem;
+      }
+    }
+
+    .boxFlexivel {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+  }
+
+  .copyrightFooter {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 965px) {
+  .footer {
+    height: 90vh;
+    padding: 0 4rem;
 
     .contentFooter {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
+      justify-content: flex-start;
 
-        article {
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            height: 30vh;           
-            border: 1px solid white;
-        }
-
-        .boxFlexivel {
-            display: flex;
-            align-items: center;
-            gap: 0.7rem;
-        }
-
+      article {
+        width: 75%;
+      }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 0 1rem;
+
+    .contentFooter {
+      gap: 1rem;
+      article {
+        h3 {
+          font-size: 0.9rem;
+        }
+
+        p {
+          font-size: 0.7rem;
+        }
+
+        .imageCoracao {
+          width: 35px;
+        }
+      }
+      .container {
+        gap: 0.4rem;
+      }
+    }
+
+    .copyrightFooter {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    height: 60vh;
+
+    .contentFooter {
+      article {
+        height: 20vh;
+      }
+    }
+  }
 }
