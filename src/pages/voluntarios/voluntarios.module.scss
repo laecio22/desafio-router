@@ -30,9 +30,57 @@
 
 //estilização  sessão  formulário
 
+.containerForm {
+   background-color: colors.$color-green;
+   height: 70vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   form {
+    background-color: colors.$color-white;
+    width: 80%;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+
+    h2 {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    h4 {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    input {
+      height: 50px;
+    }
+
+    input, textarea {
+      border-radius: 10px;
+      background-color: colors.$color-light;
+      border: 1px solid colors.$color-black;
+    }
+
+    .groupInput{
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .boxFlexivel {
+      display: flex;
+      gap: 1rem;
+    }
+   }
+}
+
 @media screen and (max-width: 1030px) {
   .containerVoluntario {
-    height: 130vh;
+    height: 130vh;   
     .containerCards {
       flex-direction: column;
     }
