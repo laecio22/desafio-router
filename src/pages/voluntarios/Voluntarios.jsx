@@ -37,7 +37,9 @@ const Voluntarios = () => {
             <textarea placeholder="Conte-nos porque quer ser  um voluntário ..."></textarea>
           </div>
           <p>Entraremos em contato para mais informações</p>
-          <button>Enviar Inscrição</button>
+          <div className={s.containerButton}>
+            <button>Enviar Inscrição</button>
+          </div>
         </form>
       </section>
     </main>
