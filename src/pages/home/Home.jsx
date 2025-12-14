@@ -3,6 +3,7 @@ import iconSaude from "../../assets/saude.png";
 import doutor from "../../assets/doutor.png";
 import CardMissao from "../../components/cardMissao/CardMissao";
 import CardEstatisticas from "../../components/cardEstatisticas/CardEstatisticas";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const title1 = "Acesso Equitativo";
@@ -14,7 +15,7 @@ const Home = () => {
   const title3 = "Bem-estar Total";
   const description3 =
     "Oferecer atendimento integral em medicina geral e odontologia para melhorar a qualidade de vida.";
-  
+
   return (
     <main>
       <section className={s.container}>
@@ -26,8 +27,12 @@ const Home = () => {
             gratuito para pessoas que mais precisam na nossa comunidade.
           </p>
           <div className={s.boxButtons}>
-            <button className={s.btnVoluntario}>Seja Voluntário</button>
-            <button className={s.btnAjuda}> Como ajudar</button>
+            <Link to='/voluntarios'>
+              <button className={s.btnVoluntario}>Seja Voluntário</button>
+            </Link>
+            <Link to='/'>
+              <button className={s.btnAjuda}> Como ajudar</button>
+            </Link>
           </div>
         </div>
         <div className={s.boxImage}>
@@ -51,10 +56,16 @@ const Home = () => {
           Transformando a saúde de nossa comunidade, um paciente de cada vez
         </p>
         <div className={s.boxCardsEstatisticas}>
-          <CardEstatisticas title="2,500+" description="Pessoas Atendidas"/>
-          <CardEstatisticas title="150+"  description="Profissionais Voluntários"/>
-          <CardEstatisticas title="98%"  description="Satisfação dos Pacientes"/>
-          <CardEstatisticas title="5+"  description="Anos de Dedicação" />
+          <CardEstatisticas title="2,500+" description="Pessoas Atendidas" />
+          <CardEstatisticas
+            title="150+"
+            description="Profissionais Voluntários"
+          />
+          <CardEstatisticas
+            title="98%"
+            description="Satisfação dos Pacientes"
+          />
+          <CardEstatisticas title="5+" description="Anos de Dedicação" />
         </div>
       </section>
     </main>
