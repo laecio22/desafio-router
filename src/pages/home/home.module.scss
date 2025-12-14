@@ -34,6 +34,7 @@
 .boxButtons {
   display: flex;
   gap: 1rem;
+  
 
   button {
     padding: 0.8rem 1.2rem;
@@ -231,6 +232,10 @@
   .boxButtons {
     flex-direction: column;
     width: 100%;
+
+    button {
+      width: 100%;
+    }   
   }
 
   .missao {
