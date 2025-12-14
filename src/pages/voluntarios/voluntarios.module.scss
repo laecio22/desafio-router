@@ -131,6 +131,18 @@
   }
 }
 
+@media  screen and (max-width:700px) {
+  .containerForm {
+    form {
+      width: 90%;
+      padding: 2rem 1rem;
+      .boxFlexivel {
+        gap: 1rem;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 500px) {
   .containerVoluntario {
     h1 {
@@ -140,6 +152,26 @@
     p {
       font-size: 1.4rem;
       text-align: center;
+    }
+  }
+
+  .containerForm {
+    // height: 95vh;
+
+    form {
+      padding: 2rem 0.6rem;
+
+      h2{
+        text-align: center;
+      }
+
+      .boxFlexivel {
+        gap: 0.4rem;
+      }
+
+      button {
+        font-size: 1.1rem;
+      }
     }
   }
 }
