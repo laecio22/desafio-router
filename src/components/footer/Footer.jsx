@@ -1,5 +1,5 @@
 import s from "./footer.module.scss";
-import IconCoracao from "/coracao.png";
+import IconCoracao from "../../assets/coracao.png";
 import IconEmail from "../../assets/iconEmail.png";
 import IconPhone from "../../assets/iconPhone.png";
 import IconMap from "../../assets/iconMap.png";
